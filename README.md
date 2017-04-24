@@ -1,6 +1,8 @@
 # message-component-Vue
 A popup window components based on Vue!
 
+# 说明：
+
 # 组件安装方法：
  *   #1 引入Vue && message组件
  *     import Vue from 'Vue' 
