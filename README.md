@@ -1,9 +1,7 @@
-# message-component-Vue
+## message-component-Vue
 A popup window components based on Vue!
 
-# 说明：
-
-# 组件安装方法：
+## 组件安装方法：
  *   #1 引入Vue && message组件
  *     import Vue from 'Vue' 
  *     import Message from 'xxx/message'
@@ -29,3 +27,26 @@ A popup window components based on Vue!
  *     autoOffTime: 0.3, //自动关闭消息时间，默认是0.3s，[type: Number, 单位:s]
  *     callback: '' // 回调函数，在弹窗确认按钮点击之后执行，[type: Function]
  * }
+ 
+## 说明：
+- 组件布局基于rem，根（html）font-size为100px，UI设计稿宽度为750px，下面给出一段页面rem自适应js代码方案：
+```js
+pageAuto.js:
+/**
+ * js控制rem根大小， 实现页面自适应---------------------------------李增
+ * 634401745@qq.com
+ * 2015/10/8
+ */
+export default function() {
+    var de = document.documentElement,cw = de.clientWidth;
+    if (!cw) return;
+    const ratio = window.sxxApi.ratio = cw / 750;
+    // if (!(('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch)) cw = 450;
+    de.style.fontSize = 100 * ratio + 'px';
+    cw = de = null;
+}
+/******************************************************************************************/
+用法：
+import pageAuto from './xxx/xxx/pageAuto'
+pageAuto();	//修改页面根元素font-size大小，以适应不同屏幕大小移动设备
+```
