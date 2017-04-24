@@ -30,8 +30,8 @@ A popup window components based on Vue!
  
 ## 说明：
 - 组件布局基于rem，根（html）font-size为100px，UI设计稿宽度为750px，下面给出一段页面rem自适应js代码方案：
+//pageAuto.js:
 ```js
-pageAuto.js:
 /**
  * js控制rem根大小， 实现页面自适应---------------------------------李增
  * 634401745@qq.com
@@ -46,7 +46,9 @@ export default function() {
     cw = de = null;
 }
 /******************************************************************************************/
-用法：
+```
+### //用法：
+```js
 import pageAuto from './xxx/xxx/pageAuto'
 pageAuto();	//修改页面根元素font-size大小，以适应不同屏幕大小移动设备
 ```
