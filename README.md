@@ -7,16 +7,14 @@ A popup window components based on Vue!
  *     import Message from 'xxx/message'
  *   #2 安装组件
  *     Vue.use(Message);
- * 
  * 全局用法：
  ```js
     Vue.prototype.$message(option);
  ```
- * 
  * 组件内部用法：
  ```js
      this.$message(option);
-```
+ ```
  * options说明：
  ```js
    {
@@ -31,7 +29,7 @@ A popup window components based on Vue!
        autoOffTime: 0.3, //自动关闭消息时间，默认是0.3s，[type: Number, 单位:s]
        callback: '' // 回调函数，在弹窗确认按钮点击之后执行，[type: Function]
    }
-``` 
+ ``` 
 ## 说明：
 - 组件布局基于rem，根（html）font-size为100px，UI设计稿宽度为750px，下面给出一段页面rem自适应js代码方案：
 #### pageAuto.js:
